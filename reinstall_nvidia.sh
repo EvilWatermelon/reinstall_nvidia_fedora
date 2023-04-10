@@ -8,7 +8,7 @@
 # then reinstall the NVIDIA driver with this script.
 #
 # @OS: Fedora 37
-# @author: Jan Schroeder
+# @author: Jan
 # @date: 10/04/2023
 # @version: 0.0.1
 #################################################

@@ -9,8 +9,8 @@
 #
 # @OS: Fedora 37
 # @author: Jan
-# @date (dd/mm/yyyy): 10/04/2023
-# @version: 0.0.1
+# @date (dd/mm/yyyy): 24/04/2023
+# @version: 0.0.2
 #################################################
 
 echo '###############################################'
@@ -26,10 +26,10 @@ sudo dnf autoremove nvidia*
 echo 'Add repo...'
 sudo dnf config-manager --add-repo https://developer.download.nvidia.com/compute/cuda/repos/fedora37/x86_64/cuda-fedora37.repo
 
-echo 'Reinstall neccessary packages...'
-sudo dnf install kernel-headers kernel-devel tar bzip2 make automake gcc gcc-c++ pciutils elfutils-libelf-devel libglvnd-opengl libglvnd-devel acpid pkgconfig dkms
-
-sudo dnf install libglvnd-glx
+# echo 'Reinstall neccessary packages...'
+# uncomment if you need to reinstall the packages
+# sudo dnf install kernel-headers kernel-devel tar bzip2 make automake gcc gcc-c++ pciutils elfutils-libelf-devel libglvnd-opengl libglvnd-devel acpid pkgconfig dkms
+# sudo dnf install libglvnd-glx
 
 echo 'Install NVIDIA driver...'
 sudo dnf module install nvidia-driver:latest-dkms
